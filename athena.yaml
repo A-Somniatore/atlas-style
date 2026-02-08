@@ -1,0 +1,14 @@
+maturity: production
+type: library
+display_name: "Atlas Style"
+description: "Shared design system for Atlas AI applications — MUI dark theme, design tokens, and utility functions"
+owners:
+  - platform-engineering
+systems:
+  - ai-platform
+tags:
+  - typescript
+  - react
+  - material-ui
+  - design-system
+  - design-tokens
