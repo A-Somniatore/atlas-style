@@ -1,0 +1,34 @@
+/* atlas-style — shared design tokens across all Atlas apps */
+/* Derived from Open WebUI's neutral dark gray palette */
+
+:root {
+  /* Surfaces */
+  --atlas-bg-base: #0d0d0d;
+  --atlas-bg-surface: #171717;
+  --atlas-bg-elevated: #262626;
+  --atlas-bg-input: #333333;
+
+  /* Text */
+  --atlas-text-primary: #eeeeee;
+  --atlas-text-secondary: #9b9b9b;
+  --atlas-text-tertiary: #676767;
+
+  /* Borders */
+  --atlas-border: #333333;
+  --atlas-border-subtle: #262626;
+
+  /* Accent */
+  --atlas-accent: #7c4dff;
+  --atlas-accent-hover: #9e74ff;
+  --atlas-accent-muted: rgba(124, 77, 255, 0.12);
+
+  /* Status */
+  --atlas-success: #22c55e;
+  --atlas-warning: #f59e0b;
+  --atlas-error: #ef4444;
+  --atlas-info: #3b82f6;
+
+  /* Typography */
+  --atlas-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --atlas-radius: 12px;
+}

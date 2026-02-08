@@ -1,0 +1,21 @@
+{
+  "name": "atlas-style",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./theme": "./src/theme.ts",
+    "./provider": "./src/AtlasProvider.tsx",
+    "./tokens": "./src/tokens.css",
+    "./tokens/js": "./src/tokens.ts",
+    "./utils": "./src/utils.ts",
+    "./constants": "./src/constants.ts"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11",
+    "@emotion/styled": ">=11",
+    "@mui/material": ">=6",
+    "react": ">=18"
+  }
+}
