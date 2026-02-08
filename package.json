@@ -1,5 +1,5 @@
 {
-  "name": "atlas-style",
+  "name": "@somniatore/atlas-style",
   "version": "0.1.1",
   "type": "module",
   "publishConfig": {
