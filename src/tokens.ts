@@ -1,40 +1,40 @@
-/** Atlas design tokens as JS constants — use these in MUI sx props, styled-components, etc. */
+/** Atlas design tokens — matches Open WebUI's warm neutral dark aesthetic */
 
 export const atlas = {
   bg: {
     base: "#0d0d0d",
     surface: "#171717",
-    elevated: "#262626",
-    input: "#333333",
+    elevated: "#1e1e1e",
+    input: "#2a2a2a",
   },
   text: {
-    primary: "#eeeeee",
+    primary: "#e8e8e8",
     secondary: "#9b9b9b",
     tertiary: "#676767",
   },
   border: {
-    default: "#333333",
-    subtle: "#262626",
+    default: "#2a2a2a",
+    subtle: "#1e1e1e",
   },
   accent: {
-    main: "#7c4dff",
-    hover: "#9e74ff",
-    muted: "rgba(124, 77, 255, 0.12)",
+    main: "#e8e8e8",
+    hover: "#ffffff",
+    muted: "rgba(255, 255, 255, 0.06)",
   },
   status: {
     success: "#22c55e",
     warning: "#f59e0b",
     error: "#ef4444",
-    info: "#3b82f6",
+    info: "#64b5f6",
   },
   font: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
   radius: 12,
 } as const;
 
-/** Chart-specific colors matching atlas classification semantics */
+/** Chart colors — muted, professional tones */
 export const chartColors = {
-  simple: "#22c55e",
-  reasoning: "#f59e0b",
-  code: "#3b82f6",
-  explicit: "#7c4dff",
+  simple: "#4ade80",
+  reasoning: "#fbbf24",
+  code: "#60a5fa",
+  explicit: "#a78bfa",
 } as const;
