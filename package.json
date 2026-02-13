@@ -1,6 +1,6 @@
 {
   "name": "@somniatore/atlas-style",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "type": "module",
   "publishConfig": {
     "registry": "https://registry.somniatore.com"
@@ -12,7 +12,10 @@
     "./tokens": "./src/tokens.css",
     "./tokens/js": "./src/tokens.ts",
     "./utils": "./src/utils.ts",
-    "./constants": "./src/constants.ts"
+    "./constants": "./src/constants.ts",
+    "./assets": "./src/assets/index.ts",
+    "./assets/logo": "./src/assets/atlas-logo.png",
+    "./assets/mascot": "./src/assets/atlas-mascot.png"
   },
   "peerDependencies": {
     "@emotion/react": ">=11",

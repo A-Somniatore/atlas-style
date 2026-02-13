@@ -16,3 +16,6 @@ export {
 
 // Constants
 export { DRAWER_WIDTH } from "./constants";
+
+// Assets
+export { atlasLogo, atlasMascot } from "./assets";
