@@ -16,10 +16,11 @@
   --atlas-border: #2a2a2a;
   --atlas-border-subtle: #1e1e1e;
 
-  /* Accent — minimal, white-forward like Open WebUI */
-  --atlas-accent: #e8e8e8;
-  --atlas-accent-hover: #ffffff;
-  --atlas-accent-muted: rgba(255, 255, 255, 0.06);
+  /* Accent — gold/cyan from the Atlas logo */
+  --atlas-accent: #F5A623;
+  --atlas-accent-hover: #FFD060;
+  --atlas-accent-secondary: #4FC3F7;
+  --atlas-accent-muted: rgba(245, 166, 35, 0.08);
 
   /* Status */
   --atlas-success: #22c55e;

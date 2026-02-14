@@ -4,8 +4,13 @@ export function formatLatency(ms: number): string {
   return `${(ms / 1000).toFixed(2)}s`;
 }
 
-/** Format ISO timestamp to locale string */
-export function formatTimestamp(ts: string): string {
+/** Format timestamp to locale string — handles ISO strings, Unix seconds, and Unix ms */
+export function formatTimestamp(ts: string | number): string {
+  if (typeof ts === "number" || /^\d+$/.test(ts)) {
+    const n = typeof ts === "number" ? ts : Number(ts);
+    // Unix seconds (< 1e12) vs milliseconds
+    return new Date(n < 1e12 ? n * 1000 : n).toLocaleString();
+  }
   return new Date(ts).toLocaleString();
 }
 

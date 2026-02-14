@@ -1,16 +1,16 @@
 import { createTheme, type Theme } from "@mui/material/styles";
 import { atlas } from "./tokens";
 
-/** Pre-built Atlas MUI theme — clean dark mode matching Open WebUI */
+/** Pre-built Atlas MUI theme — dark mode with gold/cyan accents */
 export const atlasTheme: Theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#e8e8e8",
-      light: "#ffffff",
+      main: atlas.accent.main,
+      light: atlas.accent.hover,
     },
     secondary: {
-      main: atlas.status.info,
+      main: atlas.accent.secondary,
     },
     background: {
       default: atlas.bg.base,
@@ -44,6 +44,10 @@ export const atlasTheme: Theme = createTheme({
           backgroundColor: atlas.bg.surface,
           borderRadius: atlas.radius,
           border: `1px solid ${atlas.border.subtle}`,
+          transition: "border-color 0.2s ease",
+          "&:hover": {
+            borderColor: atlas.border.default,
+          },
         },
       },
     },
@@ -58,6 +62,15 @@ export const atlasTheme: Theme = createTheme({
       styleOverrides: {
         root: {
           borderBottomColor: atlas.border.subtle,
+        },
+      },
+    },
+    MuiTableRow: {
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            backgroundColor: atlas.accent.muted,
+          },
         },
       },
     },
@@ -80,10 +93,10 @@ export const atlasTheme: Theme = createTheme({
         root: {
           borderRadius: 8,
           "&.Mui-selected": {
-            backgroundColor: "rgba(255, 255, 255, 0.06)",
+            backgroundColor: atlas.accent.muted,
           },
           "&.Mui-selected:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.09)",
+            backgroundColor: "rgba(245, 166, 35, 0.12)",
           },
           "&:hover": {
             backgroundColor: "rgba(255, 255, 255, 0.04)",

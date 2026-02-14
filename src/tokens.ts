@@ -1,4 +1,4 @@
-/** Atlas design tokens — matches Open WebUI's warm neutral dark aesthetic */
+/** Atlas design tokens — dark theme with gold/cyan accents from the Atlas logo */
 
 export const atlas = {
   bg: {
@@ -17,9 +17,10 @@ export const atlas = {
     subtle: "#1e1e1e",
   },
   accent: {
-    main: "#e8e8e8",
-    hover: "#ffffff",
-    muted: "rgba(255, 255, 255, 0.06)",
+    main: "#F5A623",
+    hover: "#FFD060",
+    secondary: "#4FC3F7",
+    muted: "rgba(245, 166, 35, 0.08)",
   },
   status: {
     success: "#22c55e",
@@ -31,10 +32,10 @@ export const atlas = {
   radius: 12,
 } as const;
 
-/** Chart colors — muted, professional tones */
+/** Chart colors — derived from the Atlas logo palette (gold/cyan) */
 export const chartColors = {
-  simple: "#4ade80",
-  reasoning: "#fbbf24",
-  code: "#60a5fa",
-  explicit: "#a78bfa",
+  simple: "#4FC3F7",   // Cyan — clean, straightforward requests
+  reasoning: "#F5A623", // Gold — complex reasoning tasks
+  code: "#26C6DA",     // Teal — code generation
+  explicit: "#FFB74D", // Amber — explicit model selection
 } as const;
